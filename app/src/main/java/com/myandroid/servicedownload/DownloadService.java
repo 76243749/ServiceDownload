@@ -65,8 +65,6 @@ public class DownloadService extends Service {
             if (downloadTask == null){
                 downloadUrl = url;
                 downloadTask = new DownloadTask(listener);
-
-                
                 //Toast.makeText(DownloadService.this,"下载地址"+downloadUrl,Toast.LENGTH_SHORT).show();
                 downloadTask.execute(downloadUrl);
                 startForeground(1,getNotification("开始下载",0));
