@@ -69,6 +69,7 @@ public class DownloadService extends Service {
                 downloadTask.execute(downloadUrl);
                 startForeground(1,getNotification("开始下载",0));
                 Toast.makeText(DownloadService.this,"开始下载",Toast.LENGTH_SHORT).show();
+                
             }
         }
 
